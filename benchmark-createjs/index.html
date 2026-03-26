@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreateJS Zombie Benchmark</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #222;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        #canvas-wrapper {
+            position: relative;
+            width: 800px;
+            height: 600px;
+            border: 2px solid #444;
+        }
+        #canvas, #hud {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 800px;
+            height: 600px;
+        }
+        #canvas {
+            background-color: #000;
+        }
+        #hud {
+            pointer-events: none; /* let mouse events pass through to WebGL canvas */
+        }
+    </style>
+</head>
+<body>
+    <div id="canvas-wrapper">
+        <canvas id="canvas" width="800" height="600"></canvas>
+        <canvas id="hud" width="800" height="600"></canvas>
+    </div>
+    <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+    <script src="benchmark.js"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+    <meta title="hxmaker Benchmark" package="com.benchmark.hxmaker" version="1.0.0" company="Benchmark" />
+    <app main="Main" path="Export" file="HxmakerBenchmark" />
+    <window width="800" height="600" fps="60" background="#1a1a2e" hardware="true" allow-high-dpi="true" vsync="true" />
+    <source path="src" />
+    <source path="../hxmaker/src" />
+    <source path="../hxmaker-openfl/src" />
+    <!-- Core OpenFL stack -->
+    <haxelib name="openfl" />
+    <haxelib name="lime" />
+    <!-- HXMaker transitive dependencies (from hxmaker/include.xml and hxmaker-openfl/include.xml) -->
+    <haxelib name="actuate" />
+    <haxelib name="openfl-glsl" />
+    <haxelib name="vector-math" />
+    <haxelib name="spine-hx" />
+    <haxeflag name='--macro keep("hx.display.*")' />
+    <assets path="../assets" rename="assets" />
+</project>
